@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CatanLayoutGenerator">
+<head>
+  <title>CatanLayoutGenerator</title>
+  <link href="~/css/html5css3_reset-doctor.css" rel="stylesheet" />
+  @*<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />*@
+  <link href="~/css/site.css" rel="stylesheet" />
+  <base href="/" />
+</head>
+<body>
+
+  <div id="top" class="container">
+    <nav class="header">
+      <div class="headerBar">
+        @*Do I need a Div inside of a Nav?*@
+        <span class="headerLeft">
+          @*Links for:
+            | Home | Contact | About | Generator |*@
+          <a ui-sref="home">Home</a>
+          <a ui-sref="">Contact</a>
+          <a ui-sref="about">About</a>
+          <a ui-sref="">Generator</a>
+        </span>
+        <span class="plsCenter">
+          &lt;Logo Goes Here&gt;
+        </span>
+        <span class="headerRight">
+          @*Links for
+            | User CP | Register | Login |*@
+          <a ui-sref="playerProfile">User CP</a> @*Maybe combine Login / Register? Ask Eric how.*@
+          <a ui-sref="register">Register</a>
+          <a ui-sref="login">Login</a> @*Becomes Logout after logging in. Again ask Eric about this*@
+        </span>
+      </div>
+    </nav>
+
+    <div class="content">
+      <ui-view></ui-view>
+    </div>
+
+    <footer class="footer">
+      <div class="footerBar">
+        <span>
+          @*Contains Site Map, Copyright, Basic Nav, ToTop, etc
+            | Home | Contact | About | *@
+          <a ui-sref="home">| Home</a>
+          <a ui-sref="">| Contact</a>
+          <a ui-sref="about">| About</a>
+          | &copy; 2016 Mason Matlock
+          <a href="#" scroll-to="top">| To Top |</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Library Files -->
+  <script src="~/lib/angular/angular.js"></script>
+  <script src="~/lib/angular-resource/angular-resource.js"></script>
+  <script src="~/lib/angular-animate/angular-animate.js"></script>
+  <script src="~/lib/angular-touch/angular-touch.js"></script>
+  <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="~/lib/ngsmoothscroll/dist/angular-smooth-scroll.min.js"></script>
+
+  <!-- App Files-->
+  <script src="~/ngapp/app.js"></script>
+  <script src="~/ngapp/controllers/controllers.js"></script>
+  <script src="~/ngapp/services/services.js"></script>
+
+
+  <!-- Security -->
+  <script src="~/ngapp/controllers/accountcontroller.js"></script>
+  <script src="~/ngapp/services/accountservice.js"></script>
+
+</body>
+</html>

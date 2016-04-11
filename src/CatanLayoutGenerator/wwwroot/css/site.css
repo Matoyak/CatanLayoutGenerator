@@ -1,0 +1,201 @@
+/***************
+  Color Palette: Entrapped in a Palette by Annajak (http://www.colourlovers.com/palette/903157/Entrapped_InAPalette)
+
+  Light Blue Wall: #b9d7d9, hsl(184,30%,79%) by Annajak
+  Shaded Teal: #668284, hsl(184,13%,46%) by Annajak
+  MT Black: #2a2829, hsl(330,2%,16%) by PhakE**
+  Dancing on Air: #493736, hsl(3,15%,25%) by Fleshy
+  Red Door: #7b3b3b, hsl(0,35%,36%) by Annajak
+
+****************/
+
+
+/****************
+  SITE-WIDE CSS
+*****************/
+body {
+  color: hsl(330,2%,16%);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(3,15%,25%);
+}
+
+a:hover {
+  color: hsl(0,35%,36%);
+}
+
+fieldset {
+  width: 40vw;
+}
+
+.header {
+  border-bottom: 1px solid #2a2829;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(184,30%,79%);
+}
+
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  /*width: 100vw; /*Look into @media for responsive design on mobile*/
+  height: 75px;
+  background-color: hsl(184,13%,46%);
+}
+
+.headerBar a {
+  font-size: 12pt;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headerLeft {
+  flex-direction: row;
+  margin-left: 10vw;
+}
+
+.plsCenter {
+}
+
+.headerRight {
+  flex-direction: row-reverse;
+  margin-right: 10vw;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 48pt;
+  text-align: center;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 2px hsl(184,30%,79%);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-top: 1em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.paraHeading {
+  margin-bottom: .5em;
+  font-size: 24pt;
+}
+
+.para0 {
+  margin-bottom: 1em;
+}
+
+.para1 {
+}
+
+.imgCol {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 1em;
+  margin-right: 10vw;
+}
+
+.imgHeading {
+  margin-bottom: .5em;
+  font-size: 24pt;
+}
+
+.imgCol img {
+  margin-bottom: 1em;
+}
+
+.footer {
+  height: 20px;
+  align-items: center;
+  /*margin-top: 5px;*/
+}
+
+.footerBar {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+/****************
+  HOME VIEW CSS
+*****************/
+
+.homeContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleimg {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 728px;
+  height: 90px;
+  background-image: url("http://lorempixel.com/g/728/90/abstract/");
+  background-color: hsla(184,13%,46%,.3);
+  border: 1px solid hsla(330,2%,16%,.3);
+}
+
+/*****************
+  ABOUT VIEW CSS
+******************/
+
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+}
+
+/*****************
+  LOGIN VIEW CSS
+******************/
+
+label {
+  display: block;
+  margin-top: 5px;
+}
+
+.submit {
+  margin-top: 10px;
+}
+
+/********************
+  REGISTER VIEW CSS
+*********************/
+
+label {
+  display: block;
+  margin-top: 5px;
+}
+
+.submit {
+  margin-top: 10px;
+}
+
+/********************
+  NOTFOUND VIEW CSS
+*********************/
+
+
+
+/*******************
+  PROFILE VIEW CSS
+********************/
