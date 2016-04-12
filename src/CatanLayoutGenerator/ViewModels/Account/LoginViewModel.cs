@@ -4,10 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CatanLayoutGenerator.ViewModels.Account
-{
-    public class LoginViewModel
-    {
+namespace CatanLayoutGenerator.ViewModels.Account {
+    public class LoginViewModel {
         [Required]
         [EmailAddress]
         public string Email { get; set; }
