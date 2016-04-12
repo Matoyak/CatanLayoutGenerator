@@ -1,6 +1,6 @@
 namespace CatanLayoutGenerator {
 
-    angular.module('CatanLayoutGenerator', ['ui.router', 'ngResource', 'ui.bootstrap']).config((
+    angular.module('CatanLayoutGenerator', ['ui.router', 'ngResource', 'ui.bootstrap', 'smoothScroll']).config((
         $stateProvider: ng.ui.IStateProvider,
         $urlRouterProvider: ng.ui.IUrlRouterProvider,
         $locationProvider: ng.ILocationProvider
@@ -54,6 +54,13 @@ namespace CatanLayoutGenerator {
                 templateUrl: '/ngApp/views/about.html',
                 controller: CatanLayoutGenerator.Controllers.AboutController,
                 controllerAs: 'controller'
+            })
+            .state('contact', { //TODO: Add controller!
+                url: '/contact',
+                templateUrl: '/ngApp/views/contact.html'
+            }).state('generator', { //TODO: Add controller!
+                url: '/generator',
+                templateUrl: '/ngApp/views/generator.html'
             })
             .state('notFound', {
                 url: '/notFound',

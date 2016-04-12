@@ -9,7 +9,6 @@
   <base href="/" />
 </head>
 <body>
-
   <div id="top" class="container">
     <nav class="header">
       <div class="headerBar">
@@ -18,9 +17,9 @@
           @*Links for:
             | Home | Contact | About | Generator |*@
           <a ui-sref="home">Home</a>
-          <a ui-sref="">Contact</a>
+          <a ui-sref="contact">Contact</a>
           <a ui-sref="about">About</a>
-          <a ui-sref="">Generator</a>
+          <a ui-sref="generator">Generator</a>
         </span>
         <span class="plsCenter">
           &lt;Logo Goes Here&gt;
@@ -45,7 +44,7 @@
           @*Contains Site Map, Copyright, Basic Nav, ToTop, etc
             | Home | Contact | About | *@
           <a ui-sref="home">| Home</a>
-          <a ui-sref="">| Contact</a>
+          <a ui-sref="contact">| Contact</a>
           <a ui-sref="about">| About</a>
           | &copy; 2016 Mason Matlock
           <a href="#" scroll-to="top">| To Top |</a>
@@ -61,7 +60,7 @@
   <script src="~/lib/angular-touch/angular-touch.js"></script>
   <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="~/lib/ngsmoothscroll/dist/angular-smooth-scroll.min.js"></script>
+  <script src="~/lib/ngsmoothscroll/lib/angular-smooth-scroll.js"></script>
 
   <!-- App Files-->
   <script src="~/ngapp/app.js"></script>
