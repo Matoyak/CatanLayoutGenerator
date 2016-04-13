@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace CatanLayoutGenerator.Models {
-    public class UserBoards {
+    public class UserBoard {
         public int UserId { get; set; }
         public int BoardLayoutId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }

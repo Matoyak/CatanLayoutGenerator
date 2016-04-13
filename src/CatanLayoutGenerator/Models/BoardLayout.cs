@@ -9,6 +9,6 @@ namespace CatanLayoutGenerator.Models {
         public string Layout { get; set; } //serialized Json of 19 hexs. (Comes from Board).
         public string LayoutImg { get; set; } //the initial idea to get project working.
 
-        public ICollection<UserBoards> UserBoards { get; set; }
+        public ICollection<UserBoard> UserBoards { get; set; }
     }
 }

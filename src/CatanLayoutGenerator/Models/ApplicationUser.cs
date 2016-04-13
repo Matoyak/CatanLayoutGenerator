@@ -7,6 +7,6 @@ using Microsoft.AspNet.Identity.EntityFramework;
 namespace CatanLayoutGenerator.Models {
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser {
-        public ICollection<UserBoards> UserBoards { get; set; }
+        public ICollection<UserBoard> UserBoards { get; set; }
     }
 }

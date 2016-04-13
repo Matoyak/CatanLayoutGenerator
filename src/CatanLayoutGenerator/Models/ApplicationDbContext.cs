@@ -8,6 +8,8 @@ using Microsoft.Data.Entity;
 namespace CatanLayoutGenerator.Models {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser> {
         public DbSet<BoardLayout> MyProperty { get; set; }
+        public DbSet<UserBoard> UserBoards { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder) {
             base.OnModelCreating(builder);
             // Customize the ASP.NET Identity model and override the defaults if needed.
