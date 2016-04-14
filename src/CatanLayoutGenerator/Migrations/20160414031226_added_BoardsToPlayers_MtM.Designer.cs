@@ -8,9 +8,10 @@ using CatanLayoutGenerator.Models;
 namespace CatanLayoutGenerator.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160414031226_added_BoardsToPlayers_MtM")]
+    partial class added_BoardsToPlayers_MtM
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348")

@@ -3,19 +3,16 @@
 <head>
   <title>CatanLayoutGenerator</title>
   <link href="~/css/html5css3_reset-doctor.css" rel="stylesheet" />
-  @*<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />*@
+  <link href="~/fonts/fontstylesheet.css" rel="stylesheet" />
   <link href="~/css/site.css" rel="stylesheet" />
+  @*Let the browser know website is optimized for mobile*@
   <base href="/" />
 </head>
 <body>
   <div id="top" class="container">
     <nav class="header">
       <div class="headerBar">
-        @*Do I need a Div inside of a Nav?*@
         <span class="headerLeft">
-          @*Links for:
-            | Home | Contact | About | Generator |*@
           <a ui-sref="home">Home</a>
           <a ui-sref="contact">Contact</a>
           <a ui-sref="about">About</a>
@@ -25,8 +22,6 @@
           &lt;Logo Goes Here&gt;
         </span>
         <span class="headerRight">
-          @*Links for
-            | User CP | Register | Login |*@
           <a ui-sref="playerProfile">User CP</a> @*Maybe combine Login / Register? Ask Eric how.*@
           <a ui-sref="register">Register</a>
           <a ui-sref="login">Login</a> @*Becomes Logout after logging in. Again ask Eric about this*@
@@ -60,13 +55,13 @@
   <script src="~/lib/angular-touch/angular-touch.js"></script>
   <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
   <script src="~/lib/ngsmoothscroll/lib/angular-smooth-scroll.js"></script>
 
   <!-- App Files-->
   <script src="~/ngapp/app.js"></script>
   <script src="~/ngapp/controllers/controllers.js"></script>
   <script src="~/ngapp/services/services.js"></script>
-
 
   <!-- Security -->
   <script src="~/ngapp/controllers/accountcontroller.js"></script>

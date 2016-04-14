@@ -1,6 +1,6 @@
 namespace CatanLayoutGenerator {
 
-    angular.module('CatanLayoutGenerator', ['ui.router', 'ngResource', 'ui.bootstrap', 'smoothScroll']).config((
+    angular.module('CatanLayoutGenerator', ['ui.router', 'ngResource', 'smoothScroll']).config((
         $stateProvider: ng.ui.IStateProvider,
         $urlRouterProvider: ng.ui.IUrlRouterProvider,
         $locationProvider: ng.ILocationProvider
